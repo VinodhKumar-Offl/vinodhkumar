@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vinodh Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" height="80px" width="80px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vinodh</span> Kumar</h1><br>
+                <h4> A <span class="typing"></span></h4>
+                  <br>
+                <h4>A Computer Science and Engineering Student</h4>
+            </div>
+        </div>
+    </div>
+<!--                                      About Page                                 -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1><br>
+                    <p>Hey there! I'm Vinodh Kumar, a 21-year-old Computer Science & Engineering enthusiast hailing from the vibrant tech landscape of India. Currently immersed in the exciting journey of academia at SNS College of Technology, I'm sculpting my future with a blend of Software Development, UI/UX Design, and the art of teaching.My days are a vibrant fusion of academia and creativity, where I thrive on collaborative problem-solving and contribute to innovative solutions. <br><br>As a part-time freelancer, I breathe life into creative projects, fueled by an insatiable curiosity.In addition to my roles in software and design, I'm also a part-time tutor. I'm an active, energetic, and self-learning individual, quick to grasp new concepts and adapt effortlessly. I'm currently seeking job prospects that offer a dynamic environment for growth. If you have an exciting opportunity aligning with my skills, let's connect and embark on a journey of innovation together</p><br>
+                    <div class="tab-titles">
+                        <h4 class="tab-links active-link" onclick="opentab('skills')">Skills</h4>
+                        <h4 class="tab-links" onclick="opentab('experience')">Internships</h4>
+                        <h4 class="tab-links" onclick="opentab('education')">Education</h4>
+                        <h4 class="tab-links" onclick="opentab('awards')">Awards</h4>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI UX</span><br><br>Figma, Adobe XD</li><br>
+                            <li><span>Software Development</span><br><br>HTML, CSS, JavaScript, Flutter, Git</li><br>
+                            <li><span>Tutoring</span><br><br>Problem Solving, Communication, Leadership, Time Management and Work Ethics</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"id="experience">
+                        <ul>
+                            <li><span>December 2023 - Current</span><br><br>UI UX Designer at UpSkill Mafia</li><br>
+                            <li><span>June 2022 - Current</span><br><br>Computer Science tutor at Murugan Tuition Centre</li><br>
+                            <li><span>December 2021 - July 2022</span><br><br>Software Developer at Mr.Intelligence Inc</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br><br>BE Computer Science and Engineering at SNS College of Technology with 9.3 CGPA</li><br>
+                            <li><span>2019-2020</span><br><br>HSC at Mani Higher Secondary School with 86%</li><br>
+                            <li><span>2017-2018</span><br><br>SSLC at Vimal Jyothi Convent Matriculation Higher Secondary School with 94%</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="awards">
+                        <ul>
+                            <li><span>2023</span><br><br>All Rounder Performer Award - Excellence in academics, co-curricular, and extra-curricular activities.</li><br>
+                            <li><span>2020</span><br><br>Mani Magan Award - Excellence in academics, co-curricular, and extra-curricular</li><br>
+                            <li><span>2018</span><br><br>State III and District I in English proficiency Test</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--                                                     Services-->
+    <div id="services">
+        <div class="container">
+            <h1  class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/source-code.png" alt="source-code"/>
+                    <h2>Development</h2>
+                    <p>Precisely crafting seamless and flawless solutions through meticulous engineering.</p>
+                    
+                </div>
+                <div>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/paint-palette.png" alt="paint-palette"/>
+                    <h2>UI UX Design</h2>
+                    <p>Crafting visually captivating and intuitively functional designs.</p>
+                    
+                </div>
+                <div>
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/coach-.png" alt="coach-"/>
+                    <h2>Tutoring</h2>
+                    <p>Igniting intellectual curiosity, nurturing growth and elevating the knowledge and skills of students.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--                              Projects               -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.png">
+                    <div class="layer">
+                        <h3>TodoList App</h3>
+                        <p>Tech Stacks : HTML,CSS,JavaScript</p>
+                        <a href="https://github.com/VinodhKumar-Offl/ToDo-List"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/project-2.png">
+                    <div class="layer">
+                        <h3>Driver Drowsiness Detection</h3>
+                        <p>Tech Stacks : Python</p>
+                        <a href="https://github.com/VinodhKumar-Offl/Driver-Drowsiness-detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/project-3.jpg">
+                    <div class="layer">
+                        <h3>Face Recogniton</h3>
+                        <p>Tech Stacks : Python</p>
+                        <a href="https://github.com/VinodhKumar-Offl/Face-Recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vinodhkumar142002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+91-9944438823</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vinodhkumar-r/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/VinodhKumar-Offl"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vinodhkumar__vk/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Vinodh kumar_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vinodh Kuamr - All Rights Reserved</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function  openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function  closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnkxyV8TAW0Xj0_OLFYjPq5jwyjHFKR6LzbskjjisRzrH-YlPStYgLvxINp1j0D6e9/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var typing = new Typed(".typing",{
+        strings: ["UI UX Designer","Software Developer","Tutor","Freelancer"],
+        typeSpeed: 100,
+        BackSpeed: 60,
+        loop: true
+    })
+</script>
+</body>
+</html>
