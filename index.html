@@ -167,7 +167,7 @@
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="What’s your primary key? Or just your name is fine!" required>
-                        <input type="email" name="email" placeholder="Your email... don't worry, we won’t spam you!" required>
+                        <input type="email" name="email" placeholder="Your email... Don't worry, we won’t spam you!" required>
                         <textarea name="Message" rows="6" placeholder="Got something to say? Send it to the server!"></textarea>
                         <button type="submit" class="btn btn2"> Commit Changes!</button>
                     </form>
@@ -226,7 +226,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message sent successfully"
+                msg.innerHTML = "Your message has been pushed to production!"
                 setTimeout(function(){
                     msg.innerHTML = "";
                 },5000)
