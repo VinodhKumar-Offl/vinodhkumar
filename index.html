@@ -42,7 +42,8 @@
                         Besides coding and designing, I'm also a part-time tutor 👨‍🏫. I'm energetic ⚡, quick to learn 📚, and adaptable 🔄. Always excited to explore new ideas and create something amazing together! 🌈🎉</p><br>
                     <div class="tab-titles">
                         <h4 class="tab-links active-link" onclick="opentab('skills')">Skills</h4>
-                        <h4 class="tab-links" onclick="opentab('experience')">Internships</h4>
+                        <h4 class="tab-links" onclick="opentab('experience')">Experience</h4>
+                        <h4 class="tab-links" onclick="opentab('internships')">Internships</h4>
                         <h4 class="tab-links" onclick="opentab('education')">Education</h4>
                         <h4 class="tab-links" onclick="opentab('awards')">Awards</h4>
                     </div>
@@ -57,7 +58,13 @@
 
                     <div class="tab-contents"id="experience">
                         <ul>
-                            <li><span>October 2024 - Present</span><br><br>Advisory Analyst at Deloitte</li><br>
+                            <li><span>October 2024 - Present</span><br><br>Advisory Analyst Trainee at Deloitte</li><br>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents"id="internships">
+                        <ul>
                             <li><span>June 2024 - July 2024</span><br><br>Software Developer Intern at Codewents</li><br>
                             <li><span>November 2023 - January 2024</span><br><br>Subject Matter Expert at Learnasyougo</li><br>
                             <li><span>February 2023 - March 2023</span><br><br>Data Science Intern at Lets Grow More</li><br>
@@ -120,11 +127,11 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/project1.png">
+                    <img src="images/project-1.jpg">
                     <div class="layer">
-                        <h3>TodoList App</h3>
-                        <p>Tech Stacks : HTML,CSS,JavaScript</p>
-                        <a href="https://github.com/VinodhKumar-Offl/ToDo-List"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3>TrashNet Classification</h3>
+                        <p>Tech Stacks : HTML,CSS,Flask,Machine Learning(Keras,Tensorflow),OpenCV</p>
+                        <a href="https://github.com/VinodhKumar-Offl/Trashnet"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
 
@@ -166,9 +173,9 @@
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="What’s your primary key? Or just your name is fine!" required>
+                        <input type="text" name="name" placeholder="What’s your primary key? Or just your name is fine!" required>
                         <input type="email" name="email" placeholder="Your email... Don't worry, we won’t spam you!" required>
-                        <textarea name="Message" rows="6" placeholder="Got something to say? Send it to the server!"></textarea>
+                        <textarea name="message" rows="6" placeholder="Got something to say? Send it to the server!"></textarea>
                         <button type="submit" class="btn btn2"> Commit Changes!</button>
                     </form>
                     <span id="msg"></span>
@@ -217,7 +224,7 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxnkxyV8TAW0Xj0_OLFYjPq5jwyjHFKR6LzbskjjisRzrH-YlPStYgLvxINp1j0D6e9/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxb_mTZZAgmt2w8qkgLrsMAmGwVQg8C1t1CVVHU_XKiNjwLVLwp5M4hXmWBrus1y1G9/exec'
         const form = document.forms['submit-to-google-sheet']
 
         const msg = document.getElementById("msg");
@@ -239,7 +246,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     var typing = new Typed(".typing",{
-        strings: ["Software Developer","UI UX Designer","Tutor","Freelancer"],
+        strings: ["Software Developer","UI UX Designer","Tutor"],
         typeSpeed: 100,
         BackSpeed: 60,
         loop: true
